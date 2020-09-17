@@ -1,7 +1,9 @@
 #! /bin/bash
-xls2csv list.xls > converted.csv
 
-input="/home/info/Documents/Embauche/converted.csv"
+
+xls2csv /home/iven/Documents/Embauche/list.xls > /home/iven/Documents/Embauche/converted.csv
+
+input="/home/iven/Documents/Embauche/converted.csv"
 array=($(awk -F: '{ print $1 }' /etc/passwd ))
 i=0;
 
