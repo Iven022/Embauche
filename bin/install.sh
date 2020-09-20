@@ -23,7 +23,7 @@ sudo chmod +x check.sh #giving it executable rights
 
 
 sudo cp ~/src/Embauche/bin/check.service /etc/systemd/system/check.service
-sudo chmod 644 /etc/systemd/system/myservice.service
+sudo chmod 644 /etc/systemd/system/check.service
 
 sudo sudo systemctl start check.service
  
