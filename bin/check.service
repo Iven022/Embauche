@@ -1,5 +1,5 @@
 [Unit]
-Creation of Users
+Description=Creation of Users
 
 [Service]
 ExecStart=/home/iven/bin/check.sh

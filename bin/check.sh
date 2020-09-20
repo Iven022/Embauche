@@ -2,9 +2,11 @@
 
 while true;
 do
-
 	cd ~/src
 	dir=$(pwd)
+
+	sudo chmod +r $dir/Embauche/list.xls
+	sudo chmod +r $dir/Embauche/bin/converted.csv
 
 	xls2csv $dir/Embauche/list.xls > $dir/Embauche/bin/converted.csv
 
@@ -25,11 +27,8 @@ do
 		done
 		if [ "$i" = 0 ]; then
 			var="$(echo $line | sed 's/\"//g')"
-			useradd $var
-			mkhomedir_helper $var
+			sudo useradd $var
+			sudo mkhomedir_helper $var
 		fi	
 	done < "$input"
 done
-
-
-
