@@ -2,7 +2,7 @@
 Creation of Users
 
 [Service]
-ExecStart=/bin/bash /usr/bin/check.sh
+ExecStart=/home/iven/bin/check.sh
 
 [Install]
 WantedBy=multi-user.target

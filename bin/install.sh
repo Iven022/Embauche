@@ -10,7 +10,7 @@ fi
 
 #going to the src folder and checking if Embauche has already been clone there and if not, clone it.
 cd ~/src 
-if [[ -d ~/src/Embauche ]]
+if [[ -d ~/src/Embauche]]
 then
 	echo "No need to clone the Embauche repository in the src folder, you already have it."
 else 
@@ -24,7 +24,7 @@ chmod +x check.sh #giving it executable rights
 
 cd /etc/systemd/system
 cp ~/src/Embauche/bin/check.service /etc/systemd/system/check.service
-chmod +x /etc/systemd/system/check.service #giving it executable rights
+chmod +x check.service #giving it executable rights
 
 sudo systemctl start check.service
  
